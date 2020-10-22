@@ -17,7 +17,7 @@ public class GetStation {
 		// TODO Auto-generated method stub
 		
 		RestAssured.baseURI=payLoad.baseURI();
-		given().header("Content-Type","application/json").header("Default","454a7e2b224641163768836ff26025e0").
+		given().header("Content-Type","application/json").header("APPID","454a7e2b224641163768836ff26025e0").
 		when().get("/stations").then().log().all().assertThat().statusCode(200);
 	
 		
